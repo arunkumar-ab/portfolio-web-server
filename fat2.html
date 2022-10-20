@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Bank accoun opening form</title>
+        <style>
+            div{
+                border: 5;
+                padding: 5;
+                margin: 0;
+            }
+            tr:hover{background-color: orange;}
+            tr:nth-child(even){background-color: #f2f2f2;}
+            
+        </style>
+    </head>
+    <body>
+        <div>
+        <table cellspacing="5" cellpadding="5" border="2" border-radius="5" align="center">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="4" cols="30" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Type of account</td>
+                <td><select name="typeofacc" id="type">
+                    <option value="savings">Savings Account</option>
+                    <option value="current">Current Account</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>No.of Years</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio"value="male" name="male">Male
+                <input type="radio" value="female" name="female">Female
+                <input type="radio" value="trans" name="trans">Transgender</td>
+            </tr>
+            <tr>
+                <td>Deposit amount</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><button>Register</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+        </div>
+        </body>
+</html>
